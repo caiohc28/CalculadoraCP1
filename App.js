@@ -51,7 +51,7 @@ const App = () => {
         value={percentualAumento}
         onChangeText={setPercentualAumento}
       />
-      <Button title="Calcular" onPress={calcularNovoValor} color="#841584" />
+      <Button title="Calcular" onPress={calcularNovoValor} color="#AA00FF" />
       {novoValor !== null && (
         <View style={styles.resultContainer}>
           <Text style={styles.resultText}>Produto: {nomeProduto}</Text>
@@ -71,18 +71,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#000000',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 16,
-    color: '#333',
+    color: '#AA00FF',
   },
   input: {
     height: 40,
-    borderColor: '#841584',
+    borderColor: '#AA00FF',
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 12,
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   resultText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#841584',
+    color: '#AA00FF',
     marginBottom: 8,
   },
 });
