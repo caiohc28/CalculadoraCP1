@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, Button, Image, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
 
 const App = () => {
   const [nomeProduto, setNomeProduto] = useState('');
@@ -30,6 +30,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Image source={require('./assets/logo.png')} style={styles.logo} />
       <Text style={styles.title}>Calculadora de Aumento</Text>
       <TextInput
         style={styles.input}
@@ -60,6 +61,7 @@ const App = () => {
           <Text style={styles.resultText}>Valor do Aumento: R$ {valorAumento}</Text>
           <Text style={styles.resultText}>Novo Valor: R$ {novoValor}</Text>
         </View>
+
       )}
     </SafeAreaView>
   );
@@ -72,6 +74,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
     backgroundColor: '#000000',
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    marginBottom: 20,
   },
   title: {
     fontSize: 24,
