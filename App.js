@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     color: '#AA00FF',
   },
   input: {
-    height: 40,
+    height: 60,
     borderColor: '#AA00FF',
     borderWidth: 1,
     borderRadius: 5,
